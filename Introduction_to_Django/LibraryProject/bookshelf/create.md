@@ -3,10 +3,11 @@
 ```python
 from bookshelf.models import Book
 
+# Create a Book instance
 book = Book.objects.create(
-    title="The Alchemist",
-    author="Paulo Coelho",
-    publication_year=1988,
-    genre="Fiction"
+    title="1984",
+    author="George Orwell",
+    publication_year=1949
 )
 print(book)
+# Expected Output: <Book: 1984 by George Orwell>
